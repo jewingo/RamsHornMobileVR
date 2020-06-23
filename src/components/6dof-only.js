@@ -9,6 +9,8 @@ AFRAME.registerComponent('6dof-only', {
     var handleSceneLoaded = handleSceneLoaded.bind(this);
     var handleEnterVR = handleEnterVR.bind(this);
     var handleExitVR = handleExitVR.bind(this);
+    var controlsList = [];
+    sceneEl.addEventListener('controllerconnected', updateControllerList);
     if(!sceneEl.isMobile) {
       sceneEl.addEventListener('enter-vr', handleEnterVR);
       sceneEl.addEventListener('exit-vr', handleExitVR);
@@ -16,6 +18,11 @@ AFRAME.registerComponent('6dof-only', {
 
     el.sceneEl.addEventListener('loaded', handleSceneLoaded);
 
+    function updateControllerList(event) {
+      //controlsList = document.querySelectorAll('[hand-controls]');
+      controlsList.push(event);
+      console.log(event);
+    }
 
     function handleSceneLoaded (event) {
       console.log(this);
@@ -30,14 +37,18 @@ AFRAME.registerComponent('6dof-only', {
     }
 
     function handleEnterVR (event) {
-      this.el.play();
-      this.el.object3D.visible = true;
-      console.log("Entering VR... " + el.id + " should be visible now!");
+      if(controlsList.length > 0) {
+        console.log(controlsLst);
+        this.el.play();
+        this.el.object3D.visible = true;
+        console.log("Entering VR... " + el.id + " should be visible now!");
+      }
     }
 
     function handleExitVR (event) {
+      controlsList = [];
       this.el.object3D.visible = false;
-      console.log("Entering VR... " + el.id + " should not be visible now!");
+      console.log("Exiting VR... " + el.id + " should not be visible now!");
       this.el.pause();
     }
 
