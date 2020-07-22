@@ -12,3 +12,4 @@ Some components I created include:
 - "Spawner" component that creates copies of physics object when user passes VR hand through preview mesh and "grabs" (this isn't featured in this demo but in a previous Oculus-Rift-focused version)
 - "Launcher" component that lets users on mobile launch seed pods from the camera by touching and holding touch screen to "charge" and releasing to "throw". When using a Google-cardboard-like smartphone headset, users can perform this action by using the "trigger" button on the top of the assembly.
 
+Future considerations include converting components to use ammo.js implementation in development for *A-Frame*.
