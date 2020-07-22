@@ -17,6 +17,6 @@ Some components I created include:
 - "Spawner" component that creates copies of physics object when user passes VR hand through preview mesh and "grabs" (this isn't featured in this demo but in a previous Oculus-Rift-focused version)
 - "Launcher" component that lets users on mobile launch seed pods from the camera by touching and holding touch screen to "charge" and releasing to "throw". When using a Google-cardboard-like smartphone headset, users can perform this action by using the "trigger" button on the top of the assembly.
 
-Future considerations include converting components to use <a href="https://github.com/kripken/ammo.js/">ammo.js</a> implementation in development for *A-Frame* as well as implementing <a href="https://howlerjs.com/">Howler.js</a> and a sound manager for more consistent sound profile on different platforms.
+Future considerations include converting components to use <a href="https://github.com/kripken/ammo.js/">ammo.js</a> implementation in development for *A-Frame* as well as implementing <a href="https://howlerjs.com/">howler.js</a> and a sound manager for more consistent sound profile on different platforms.
 
 You can try a live demo <a href="https://jewingo.github.io/RamsHornMobileVR/MobileRamsHornTestOptimizing.html">here</a>.
