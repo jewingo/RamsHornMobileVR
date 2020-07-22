@@ -2,9 +2,14 @@
 
 This was a WebXR experiment I made as part of the VRPlants research project at North Carolina State University. Over the course of my involvment with the project I learned to use the *A-Frame* WebXR framework and write components to make unique experiences.
 
+<br/>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jewingo/RamsHornMobileVR/master/assets/RamsHorn.gif"></img>
+</p>
+<br/>
 This experience is focused around the Ram's Horn seed pod, which has tusk-like barbs that allow it to attach to fauna and propogate. In this experience, the user tries to lob 3D scans of the seed pod to latch them onto bison that mill around the space; attaching 5 to a single bison makes the seed pods detatch and despawn. Future iterations could add baked particle effects using an existing *A-Frame* component, explore geometry instancing to render more detailed bison (we were conflicted on detailing the fauna further in a flora-focused experience), and add further gamification like scoring, time limits, etc.
-
-
+<br/>
+<br/>
 
 Some components I created include:
 
