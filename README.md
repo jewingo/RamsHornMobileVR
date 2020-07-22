@@ -18,3 +18,5 @@ Some components I created include:
 - "Launcher" component that lets users on mobile launch seed pods from the camera by touching and holding touch screen to "charge" and releasing to "throw". When using a Google-cardboard-like smartphone headset, users can perform this action by using the "trigger" button on the top of the assembly.
 
 Future considerations include converting components to use ammo.js implementation in development for *A-Frame*.
+
+You can try a live demo <a href="https://jewingo.github.io/RamsHornMobileVR/MobileRamsHornTestOptimizing.html">here</a>.
